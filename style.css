@@ -176,6 +176,35 @@ footer{
     color: white;
 }
 
+.task-view > p{
+    font-size: small;
+    display: none;
+}
+
+.task-view > ul{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.task-view > ul > li{
+    cursor: pointer;
+    width: fit-content;
+    flex: 1;
+}
+
+.task-view > ul > li:hover{
+    color: cadetblue;
+}
+
+.mark-done{
+    text-decoration: line-through;
+}
+
  @media (max-width: 775px) {
      .container{
          display: flex;
